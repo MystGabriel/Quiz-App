@@ -2,7 +2,7 @@
 
 > Quiz App
 
-### Access the aplication on your browser: (https://countdown-timer-steel.vercel.app/)
+### Access the aplication on your browser: (https://quiz-app-gilt-tau.vercel.app/)
 
 ## 💻 How it works
 
