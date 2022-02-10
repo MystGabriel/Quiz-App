@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Quiz</div>
+        <div class="bars"><i class="fa-solid fa-bars"></i></div>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <img src="src/img/3D-image.jpg" alt="3D image">
+        </div>
+
+        <div class="right">
+            <div class="card" id="quiz">
+                <div class="user">
+                    <img src="https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <div class="user-info">
+                        <p class="name">Peach</p>
+                        <p class="level">Beginner</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3 class="quest" id="question">What year are we?</h3>
+                    <p class="question-info">There's only one right answer.</p>
+                </div>
+                <div class="answers">
+                    <div class="answer-1">
+                        <input type="radio" id="a_1" name="answer" class="answer">
+                        <label id="a_text" for="a_1">1. We are in the year 2023.</label>
+                    </div>
+                    <div class="answer-2">
+                        <input type="radio" id="a_2" name="answer" class="answer">
+                        <label id="b_text" for="a_2">2. We are in the year 2022.</label>
+                    </div>
+                    <div class="answer-3">
+                        <input type="radio" id="a_3" name="answer" class="answer">
+                        <label id="c_text" for="a_3">3. We are in the year 2026.</label>
+                    </div>
+                    <div class="answer-4">
+                        <input type="radio" id="a_4" name="answer" class="answer">
+                        <label id="d_text" for="a_4">4. We are in the year 2025.</label>
+                    </div>
+                </div>
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/scripts/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: badCats;
+    src: url(../fonts/Badcats.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+    background: #FFFFFF;
+    color: #A785B5;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 60px;
+}
+
+header .logo {
+    font-family: 'badCats', sans-serif;
+    font-size: 40px;
+    line-height: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+header .bars {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+header .bars i {
+    font-size: 30px;
+    background: -webkit-linear-gradient(#A785B5, #91A7BF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 40%;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .card {
+    width: 480px;
+    border-radius: 10px;
+    padding: 40px;
+    background: linear-gradient(318deg, rgba(145, 167, 191, 1) 0%, rgba(167, 133, 181, 1) 100%);
+}
+
+.right .card h2 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.right .card .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.right .card .user img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+}
+
+.right .card .user .user-info {
+    margin: 0 12px;
+}
+
+.right .card .user .user-info p {
+    color: #FFFFFF;
+}
+
+.right .card .user .user-info .name {
+    font-size: 22px;
+}
+
+.right .card .user .user-info .level {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.right .card .question {
+    margin-bottom: 50px;
+}
+
+.right .card .question .quest {
+    font-size: 26px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 3px;
+}
+
+.right .card .question .question-info {
+    font-size: 15px;
+    color: #E8F7FF;
+}
+
+.right .card .answers {
+    margin-bottom: 50px;
+}
+
+.right .card .answers>div {
+    width: fit-content;
+    margin-bottom: 10px;
+    padding: 20px 0;
+}
+
+.right .card .answers>div input[type=radio] {
+    display: none;
+}
+
+.right .card .answers>div label {
+    font-size: 18px;
+    line-height: 2.6;
+    border-radius: 7px;
+    padding: 20px 0;
+    color: #FFFFFF;
+    transition: all .6s ease-in-out;
+    cursor: pointer;
+}
+
+input[type=radio]:checked+label {
+    padding: 20px 35px !important;
+    color: #4D647D !important;
+    background: #FFFFFF;
+}
+
+.right .card button {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4D647D;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.right .card button:hover {
+    transform: translateY(-5px);
+}
+
+@media(max-width: 1020px) {
+    header {
+        padding: 40px 20px;
+    }
+    header .logo {
+        color: #A785B5;
+    }
+    .container {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .left {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        z-index: -1;
+    }
+    .left img {
+        border-radius: 20px 20px 0 0;
+    }
+    .right {
+        margin: 160px 0;
+        width: 100%;
+        height: 100%;
+    }
+    .right .card {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    }
+}
+
+@media(max-width: 542px) {
+    header {
+        color: #FFFFFF;
+    }
+    .right {
+        width: 100%;
+        height: 100%;
+        margin: 110px 0;
+        padding: 20px;
+        border-radius: 0;
+    }
+    .left img {
+        height: 100%;
+        border-radius: 0 0 0 0;
+    }
+    .right .card .answers>div:hover {
+        padding: 10px 25px;
+    }
+}
