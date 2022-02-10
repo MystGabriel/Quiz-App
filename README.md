@@ -1,4 +1,4 @@
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/86019173/153021003-9b728695-9229-4e90-979f-e8f3fb078d81.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/86019173/153420880-508b438a-4382-44e5-a788-45e42c0c9773.gif)
 
 > Quiz App
 
